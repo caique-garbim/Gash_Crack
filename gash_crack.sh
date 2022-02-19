@@ -72,7 +72,7 @@ else
 	for senha in $(cat $1);
 	do
 		# Imprime a senha que ira testar no arquivo
-		echo " [+] Senha: $senha" > temp_file;
+		echo " [+] Password: $senha" > temp_file;
 		# Imprime a hash gerada no arquivo
 		openssl passwd -$HASHTYPE -salt $MYSALT $senha >> temp_file;
 
